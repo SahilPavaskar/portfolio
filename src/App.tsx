@@ -6,12 +6,11 @@ import Experience from './components/sections/Experience';
 import Projects from './components/sections/Projects';
 import Publications from './components/sections/Publications';
 import Contact from './components/sections/Contact';
-import MouseGlow from './components/ui/MouseGlow';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <MouseGlow />
+    <div className="min-h-screen flex flex-col relative overflow-hidden">
+      <div className="grid-bg"></div>
       <Navbar />
       <main className="flex-grow">
         <Hero />
