@@ -109,8 +109,8 @@ export const portfolioConfig = {
   ],
   certifications: [
     { name: "OSCP+", date: "Expected June 2026" },
-    { name: "AWS Solutions Architect Associate", date: "April 2026" },
-    { name: "CompTIA Security+", date: "Feb 2025" }
+    { name: "AWS Solutions Architect Associate", date: "April 2026", link: "https://www.credly.com/badges/b5bb204b-a30f-4813-900f-90a25e6c3851/public_url" },
+    { name: "CompTIA Security+", date: "Feb 2025", link: "https://www.credly.com/badges/cd333c54-6e3a-4c07-a4ee-b424282e4e81/public_url" }
   ],
   publications: [
     { 

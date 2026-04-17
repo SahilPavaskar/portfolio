@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import SectionHeading from '../ui/SectionHeading';
 import { portfolioConfig } from '../../data/config';
+import { ArrowUpRight } from 'lucide-react';
 
 const cinematicTransition = { ease: "circOut" as const, duration: 0.6 };
 
@@ -37,8 +38,15 @@ export default function About() {
               </h3>
               <ul className="space-y-6">
                 {certifications.map((cert, index) => (
-                  <li key={index} className="flex flex-col">
-                    <span className="font-sans font-light text-foreground text-lg mb-1">{cert.name}</span>
+                  <li key={index} className="flex flex-col items-start">
+                    {cert.link ? (
+                      <a href={cert.link} target="_blank" rel="noopener noreferrer" className="group/cert inline-flex items-center font-sans font-light text-foreground text-lg mb-1 hover:text-muted-foreground transition-colors">
+                        {cert.name}
+                        <ArrowUpRight size={14} className="ml-2 opacity-50 group-hover/cert:opacity-100 group-hover/cert:translate-x-1 group-hover/cert:-translate-y-1 transition-all duration-300" />
+                      </a>
+                    ) : (
+                      <span className="font-sans font-light text-foreground text-lg mb-1">{cert.name}</span>
+                    )}
                     <span className="text-xs font-sans text-muted-foreground uppercase tracking-widest">
                       {cert.date}
                     </span>
