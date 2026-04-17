@@ -1,0 +1,76 @@
+Sahil Pavaskar
++1 9497434914 • sahilpavaskar81@gmail.com • LinkedIn • Github
+EDUCATION
+M.S. Computer Science​
+California State University East Bay, San Francisco​
+Courses: Cybersecurity, Operating Systems, Cloud Computing, Networking, Data Structures & Algorithms
+B.S. Computer Engineering​
+University of Mumbai, MH, India​
+Courses: Python Programming, Digital Forensics, System Architecture, Security & Risk Management
+
+Expected May 2026
+3.8 GPA
+June 2024
+8.7 CGPA
+
+TECHNICAL SKILLS
+Security Operations: Incident Response · Security Monitoring · Alert Triage · Phishing Investigation · Log Analysis · Malware &
+Sandbox Analysis.
+Microsoft Security: Microsoft Defender · Microsoft 365 Security · Azure AD / Entra ID · Conditional Access · MFA · Intune.
+Vulnerability Management: Vulnerability Scanning · Risk Prioritization · Remediation Tracking · Patch Validation.
+Infrastructure & Platforms: Active Directory · Windows & Linux · Endpoint Protection · Cloud Security (AWS & Azure),
+Terraform.
+Documentation & Communication: Incident Reports · Security Runbooks · SOPs · Risk & Stakeholder Communication
+Tools: Nmap, Nessus, Burp Suite, BloodHound, Kali Linux, Metasploit, Wireshark, Gobuster, Dirsearch, Hydra, Netcat, Nikto.
+PROFESSIONAL EXPERIENCE
+Dzero Security Solutions Pvt Ltd, India: Information Security Analyst​
+Sep/2023 - Aug/2024
+●​ Performed internal vulnerability assessments against Windows and Linux hosts by first enumerating live systems and
+exposed services with Nmap, then validating Nessus findings manually before escalating confirmed issues.
+●​ Tested web applications in Burp Suite for authentication, session management, access control, and input validation flaws;
+reproduced issues such as IDOR, reflected XSS, weak password policy, and missing security headers in controlled
+environments.
+●​ Reviewed firewall rules, open ports, and segmentation between user, server, and administrative networks to identify
+unnecessary access paths and weak boundary controls.
+●​ Wrote remediation-focused findings with clear reproduction steps, affected assets, business impact, and retest notes, then
+worked with engineers to confirm fixes after changes were deployed.
+BKC Jumbo Health Center: Information Security Analyst Intern​
+Feb/2021 - Aug/2021
+●​ Assessed AWS, Azure, and GCP resources for common security gaps, including overly permissive IAM roles, publicly
+exposed storage, weak security group rules, and missing logging on critical services.
+●​ Used CIS Benchmarks, NIST guidance, and OWASP principles to review cloud and infrastructure configurations, then
+translated technical issues into prioritized remediation items for engineering teams..
+●​ Supported purple team and adversary simulation activities by mapping attack paths in Active Directory with BloodHound
+and documenting privilege escalation and lateral movement opportunities in lab or test environments.
+RELEVANT PROJECTS
+Microsoft SOC & Incident Response Lab​
+Jan 2025
+●​ Built and operated a Microsoft-first SOC lab using Microsoft Defender, Microsoft 365 Security, and Azure AD / Entra
+ID to monitor identity, endpoint, and email security events.
+●​ Performed incident response investigations for simulated phishing attacks, suspicious sign-ins, and endpoint alerts
+●​ Conducted vulnerability assessments, risk prioritization, and remediation validation, documenting incident workflows.
+Enterprise Vulnerability Management & Threat Detection Lab
+Oct 2024
+●​ Ran automated vulnerability scans, analyzed findings, and prioritized risk based on severity and exposure.
+●​ Validated remediation through patching and configuration hardening, confirming closure via re-scans.
+●​ Built monitoring dashboards to track security alerts, vulnerability trends, and overall risk posture.
+AWS GuardDuty Automated Incident Response Pipeline
+Mar 2026
+●​ Built an automated AWS incident response pipeline using GuardDuty, EventBridge, Lambda, SNS, and EC2.
+●​ Automated alerting and remediation for high-severity findings by sending notifications and stopping affected EC2 instances.
+●​ Provisioned the full cloud security workflow with Terraform and implemented response logic in Python-based Lambda.
+Publications
+●​ S. Pavaskar et al., "Green Cover Identification and Hotspot Analysis," ICACTA 2023
+
+Oct 2023
+
+Certifications
+●​ CompTIA Security+
+●​ AWS Solutions Architect Associate
+●​ OSCP+
+
+Feb 2025
+April 2026
+Expected June 2026
+
+
