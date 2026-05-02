@@ -98,13 +98,13 @@ export const portfolioConfig = {
     },
     {
       title: "AI-Powered Code Security Reviewer",
-      date: "2026",
-      description: "Built a CLI workflow that combines Python static analysis with LLM-assisted auditing to surface actionable AppSec findings in pull-request workflows.",
+      date: "May 2026",
+      description: "Built a Python CLI and GitHub Actions workflow that reviews pull request diffs with deterministic AppSec checks and optional OpenAI-assisted analysis.",
       bullets: [
-        "Combines Bandit and Semgrep findings with Gemini-powered context review to identify injection, insecure dependency, secret exposure, and unsafe AI-integration patterns.",
-        "Produces developer-facing remediation guidance and CI/CD output designed to reduce scanner noise without dropping important vulnerabilities."
+        "Scans git diffs for hardcoded secrets, unsafe deserialization, shell injection risk, broad exception swallowing, SQL string construction, and missing test coverage signals.",
+        "Produces terminal, Markdown, and JSON review output for local use or CI, and posts pull-request feedback through a GitHub Actions workflow with optional model-backed reasoning."
       ],
-      link: "https://github.com/SahilPavaskar"
+      link: "https://github.com/SahilPavaskar/ai-code-reviewer"
     },
     {
       title: "Agentic AI Security Gateway",
