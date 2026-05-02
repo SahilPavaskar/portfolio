@@ -1,17 +1,17 @@
 export const portfolioConfig = {
   personal: {
     name: "Sahil Pavaskar",
-    title: "Application Security Engineer",
-    subtitle: "Specializing in Secure Software Development, Penetration Testing, & CI/CD Pipeline Security",
+    title: "Security Software Engineer",
+    subtitle: "Building AppSec, AI security, cloud IAM, and incident-response automation for modern engineering teams",
     email: "sahilpavaskar81@gmail.com",
-    phone: "+1 9497434914",
+    phone: "+1 949-743-4914",
     location: "San Francisco Bay Area",
     github: "https://github.com/SahilPavaskar",
     linkedin: "https://www.linkedin.com/in/sahil-pavaskar-325b851b0",
     resumeDownloadUrl: "resume.pdf", 
   },
   about: {
-    summary: "I am a dedicated Application Security Engineer with a strong foundation in secure software development, vulnerability management, and automated security testing. Currently pursuing my M.S. in Computer Science at California State University East Bay. I specialize in identifying software vulnerabilities, building secure CI/CD pipelines, and integrating automated threat detection to ensure the secure delivery of critical applications.",
+    summary: "I am a security software engineer with 2+ years of experience across vulnerability discovery, threat modeling, secure SDLC, and cloud security automation. My recent work focuses on turning noisy security signals into practical engineering workflows: AI-assisted code review, IAM attack-path analysis, GuardDuty response automation, SAST tuning, and policy-as-code controls for AWS, Kubernetes, and CI/CD environments.",
   },
   education: [
     {
@@ -31,80 +31,89 @@ export const portfolioConfig = {
   ],
   skills: [
     {
-      category: "Security Operations",
-      items: ["Incident Response", "Security Monitoring", "Alert Triage", "Phishing Investigation", "Log Analysis", "Malware & Sandbox Analysis"],
+      category: "Application Security",
+      items: ["Threat Modeling", "Secure Code Review", "OWASP Top 10", "API Security", "Vulnerability Research", "Bug Bounty"],
     },
     {
-      category: "Microsoft Security",
-      items: ["Microsoft Defender", "Microsoft 365 Security", "Azure AD / Entra ID", "Conditional Access", "MFA", "Intune"],
+      category: "AI & LLM Security",
+      items: ["Prompt Injection", "LLM Audit Workflows", "Gemini API", "OpenAI API", "LangChain", "OWASP LLM Top 10"],
     },
     {
-      category: "Vulnerability Management",
-      items: ["Vulnerability Scanning", "Risk Prioritization", "Remediation Tracking", "Patch Validation"],
+      category: "Cloud & Identity",
+      items: ["AWS IAM", "GuardDuty", "Lambda", "EventBridge", "OAuth 2.0", "OIDC", "SAML", "JWT"],
     },
     {
-      category: "Infrastructure & Platforms",
-      items: ["Active Directory", "Windows & Linux", "Endpoint Protection", "Cloud Security (AWS & Azure)", "Terraform"],
+      category: "DevSecOps & Infrastructure",
+      items: ["Terraform", "Docker", "Kubernetes", "GitHub Actions", "SAST/DAST", "Semgrep", "Bandit"],
     },
     {
-      category: "Tools",
-      items: ["Nmap", "Nessus", "Burp Suite", "BloodHound", "Kali Linux", "Metasploit", "Wireshark", "Gobuster", "Dirsearch", "Hydra", "Netcat", "Nikto"],
+      category: "Languages & Systems",
+      items: ["Python", "Java", "Go", "TypeScript", "JavaScript", "Bash", "FastAPI", "React"],
     }
   ],
   experience: [
     {
-      role: "Information Security Analyst",
-      company: "Dzero Security Solutions Pvt Ltd, India",
-      date: "Sep 2023 - Aug 2024",
+      role: "Security Software Engineer",
+      company: "Deven Infotech Pvt Ltd",
+      date: "Sep 2022 - Aug 2024",
       bullets: [
-        "Performed internal vulnerability assessments against Windows and Linux hosts by enumerating live systems and exposed services with Nmap, validating Nessus findings manually before escalating confirmed issues.",
-        "Tested web applications in Burp Suite for authentication, session management, access control, and input validation flaws; reproduced issues such as IDOR, reflected XSS, weak password policy, and missing security headers.",
-        "Reviewed firewall rules, open ports, and segmentation between user, server, and administrative networks to identify unnecessary access paths and weak boundary controls.",
-        "Wrote remediation-focused findings with clear reproduction steps, affected assets, business impact, and retest notes, then worked with engineers to confirm fixes after changes were deployed."
+        "Partnered with engineering teams on STRIDE threat modeling and security design reviews for microservices, catching authentication, API, and cryptographic risks before implementation.",
+        "Built custom Python and Java security tooling for GitHub Actions CI/CD to detect exposed secrets, insecure dependencies, and code-level vulnerabilities earlier in the SDLC.",
+        "Tuned SAST workflows with Bandit, Semgrep, and AI-assisted triage, reducing false positives by 40% and improving developer adoption of secure coding guidance.",
+        "Analyzed internal web applications for authentication bypass, SSRF, injection, access-control, and session-management issues; created proof-of-concept exploits and retested fixes with developers."
       ]
     },
     {
-      role: "Information Security Analyst Intern",
-      company: "BKC Jumbo Health Center",
+      role: "Cloud Security Engineering Intern",
+      company: "BKC Health Center",
       date: "Feb 2021 - Aug 2021",
       bullets: [
-        "Assessed AWS, Azure, and GCP resources for common security gaps, including overly permissive IAM roles, publicly exposed storage, weak security group rules, and missing logging on critical services.",
-        "Used CIS Benchmarks, NIST guidance, and OWASP principles to review cloud and infrastructure configurations, then translated technical issues into prioritized remediation items for engineering teams.",
-        "Supported purple team and adversary simulation activities by mapping attack paths in Active Directory with BloodHound and documenting privilege escalation and lateral movement opportunities in lab or test environments."
+        "Implemented Terraform-based controls for hybrid-cloud environments, including IAM least privilege, network security groups, TLS configuration, and hardened Docker/Kubernetes deployments.",
+        "Automated cloud vulnerability discovery with Python scanners, reducing manual assessment time by 30% across internal infrastructure and containerized services.",
+        "Reviewed AWS, Azure, and GCP configurations for overly permissive IAM, exposed storage, weak security groups, and missing logging; translated findings into prioritized remediation work.",
+        "Triaged security alerts across pod security, DNS, and network exposures, improving remediation flow with cloud operations teams."
       ]
     }
   ],
   projects: [
     {
+      title: "Cloud Identity Attack Path Analyzer",
+      date: "May 2026",
+      description: "Built an offline security engineering tool that finds risky AWS IAM and OAuth/OIDC configurations, then explains how they can become attack paths.",
+      bullets: [
+        "Detects overly permissive IAM policies, privilege-escalation permissions, sts:AssumeRole paths, broad GitHub Actions OIDC trusts, and risky OAuth client settings.",
+        "Generates human-readable reports, machine-readable JSON findings, and Mermaid attack graphs for CI-friendly identity risk review."
+      ],
+      link: "https://github.com/SahilPavaskar/cloud-identity-attack-path-analyzer"
+    },
+    {
       title: "AWS GuardDuty Automated Incident Response Pipeline",
       date: "Mar 2026",
-      description: "Built an automated AWS incident response pipeline using GuardDuty, EventBridge, Lambda, SNS, and EC2.",
+      description: "Built a hands-on AWS cloud security lab that detects suspicious GuardDuty findings and responds through an event-driven workflow.",
       bullets: [
-        "Automated alerting and remediation for high-severity findings by sending notifications and stopping affected EC2 instances.",
-        "Provisioned the full cloud security workflow with Terraform and implemented response logic in Python-based Lambda."
+        "Routes GuardDuty findings through EventBridge into a Python Lambda response function that alerts through SNS and can stop affected EC2 instances above a severity threshold.",
+        "Provisioned the workflow with Terraform and designed least-privilege IAM permissions for CloudWatch logging, SNS publishing, EC2 inspection, and optional remediation."
       ],
       link: "https://github.com/SahilPavaskar/aws-guardduty-ir-lab"
     },
     {
-      title: "Microsoft SOC & Incident Response Lab",
-      date: "Jan 2025",
-      description: "Built and operated a Microsoft-first SOC lab using Microsoft Defender, Microsoft 365 Security, and Azure AD / Entra ID.",
+      title: "AI-Powered Code Security Reviewer",
+      date: "2026",
+      description: "Built a CLI workflow that combines Python static analysis with LLM-assisted auditing to surface actionable AppSec findings in pull-request workflows.",
       bullets: [
-        "Performed incident response investigations for simulated phishing attacks, suspicious sign-ins, and endpoint alerts.",
-        "Conducted vulnerability assessments, risk prioritization, and remediation validation, documenting incident workflows."
+        "Combines Bandit and Semgrep findings with Gemini-powered context review to identify injection, insecure dependency, secret exposure, and unsafe AI-integration patterns.",
+        "Produces developer-facing remediation guidance and CI/CD output designed to reduce scanner noise without dropping important vulnerabilities."
       ],
       link: "https://github.com/SahilPavaskar"
     },
     {
-      title: "Enterprise Vulnerability Management Lab",
-      date: "Oct 2024",
-      description: "Comprehensive vulnerability management lab covering scanning, analysis, and remediation.",
+      title: "Agentic AI Security Gateway",
+      date: "2026",
+      description: "Designed a FastAPI security gateway for LLM and agentic AI applications that evaluates prompt injection, sensitive-data exposure, and risky tool calls before execution.",
       bullets: [
-        "Ran automated vulnerability scans, analyzed findings, and prioritized risk based on severity and exposure.",
-        "Validated remediation through patching and configuration hardening, confirming closure via re-scans.",
-        "Built monitoring dashboards to track security alerts, vulnerability trends, and overall risk posture."
-      ],
-      link: "https://github.com/SahilPavaskar"
+        "Uses YAML policy rules for model risk tiers, data classification, tool allow/deny decisions, and audit evidence for AI governance reviews.",
+        "Includes an attack corpus, regression tests, and dashboard concepts for blocked prompts, matched policy, risk score, and remediation context."
+      ]
     }
   ],
   certifications: [
